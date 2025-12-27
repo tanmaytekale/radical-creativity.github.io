@@ -12,7 +12,7 @@ const VinylDisc = forwardRef<HTMLDivElement, VinylDiscProps>(({ cover, className
     return (
         <div className={`${styles.container} ${className || ''}`} style={style} ref={ref}>
             <img
-                src="/record player assets/vinyl.png"
+                src={import.meta.env.BASE_URL + "record player assets/vinyl.png"}
                 alt="Vinyl Record"
                 className={styles.vinyl}
                 draggable={false}
