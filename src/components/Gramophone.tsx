@@ -464,7 +464,7 @@ const Gramophone: React.FC = () => {
                 <div className={styles.playerWrapper}>
                     {/* ... existing player assets ... */}
                     <img
-                        src="/record player assets/record player board.png"
+                        src={import.meta.env.BASE_URL + "record player assets/record player board.png"}
                         alt="Record Player Board"
                         className={styles.board}
                     />
@@ -486,19 +486,19 @@ const Gramophone: React.FC = () => {
                     {/* ... tonearm, light, knob ... */}
                     <img
                         ref={tonearmRef}
-                        src="/record player assets/tonearm.png"
+                        src={import.meta.env.BASE_URL + "record player assets/tonearm.png"}
                         alt="Tonearm"
                         className={styles.tonearm}
                     />
                     <img
                         ref={lightRef}
-                        src="/record player assets/light.png"
+                        src={import.meta.env.BASE_URL + "record player assets/light.png"}
                         alt="Light"
                         className={styles.light}
                     />
                     <img
                         ref={knobRef}
-                        src="/record player assets/volume nob.png"
+                        src={import.meta.env.BASE_URL + "record player assets/volume nob.png"}
                         alt="Volume Knob"
                         className={styles.knob}
                     />

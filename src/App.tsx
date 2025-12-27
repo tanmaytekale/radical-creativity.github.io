@@ -8,7 +8,7 @@ import styles from './App.module.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className={styles.appWrapper}>
         {/* Gramophone persists OUTSIDE the Routes */}
         <Gramophone />
