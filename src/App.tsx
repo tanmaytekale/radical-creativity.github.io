@@ -8,7 +8,8 @@ import styles from './App.module.css';
 
 function App() {
   return (
-    <Router>
+    /* Add the basename property here */
+    <Router basename="/radical-creativity.github.io">
       <div className={styles.appWrapper}>
         {/* Gramophone persists OUTSIDE the Routes */}
         <Gramophone />
@@ -23,5 +24,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
