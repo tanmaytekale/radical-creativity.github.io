@@ -1,0 +1,26 @@
+.appWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/images/global-bg.png');
+    background-position: 50%;
+    background-size: cover;
+    background-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.contentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (min-width: 1280px) {
+    .contentContainer {
+        width: 1280px;
+        align-items: flex-end;
+    }
+}
